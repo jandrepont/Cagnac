@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{siunitx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{moreenum}
+\usepackage[utf8]{inputenc}
+
+
+
+\title{Treatment of Special Mathematics}
+\date{2018-12-18}
+\author{G. Cagnac, E. Ramis, J. Commeau \\Translated by Joel Andrepont}
+
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	 
+	\chapter{First Chapter} 
+	{\LARGE \\ The Real Numbers}
+	\section{Cuts in the set $\mathbb{Q}$ of rational numbers}
+	\subsection{\textbf{Introduction}}
+	
+	$\ang{1}$ We admit the notion of the natural numbers, which are designated by \{\ 0, 1, 2,...\}\ for the group $\mathbb{N}$. \\
+	$\ang{2}$ We have constructed (Tome I, $\ang{34}$) $\mathbb{Z}$ by applying the theorem on the symmetrical property of an associative law, commutative and regular to the addition on $\mathbb{N}$. $\mathbb{Z}$ has been endowed with a ring structure that is commutative, unitary, without division by 0. \\
+	$\ang{3}$. We have studied (I, 36) the body $\mathbb{Q}$ of fractions of the ring $\mathbb{Z}$ under the name of rational numbers. 
+	// We will define a set $\mathbb{R}$ which we endow a structure, such that $\mathbb{R}$ will be isomorphic to $\mathbb{Q}$, allowing identification in $\mathbb{Q}$. For this we essentially use the relation of strict inequality $<$ defined on $\mathbb{Q}$ in $\deg{n}$ 36, $\deg{7}$ in tome I. We will also use the fact that $\mathbb{Q}$ is archimedian (I, 36, $\deg{8}$).
+	
+	
+	\subsection{\textbf{Cuts in the set $\mathbb{Q}$ of rational numbers(1).}}
+	$\ang{1}$ \underline{Definition} :  We say that we have effectively made a cut in $\mathbb{Q}$ when formed, by some mathematical procedure, 2 non-empty, disjoint subsets of $\mathbb{Q}$, called the lower $(a)$ and greater class $(A)$, which have the three following properties: 
+	\\
+	\begin{list}{}{}
+		\item $\alpha$) All rational numbers less than an element of $(a)$ is a member of $(a)$,
+		\item $\beta$) All rational numbers greater than an element of $(A)$ is a member of  $(A)$,
+		\item{ $\gamma$) The two classes are adjacent, which signifies that, whatever positive
+		 rational number $\epsilon$, there exists a couple of elements $a$ of $(a)$ and $A$ of $(A)$ such that $ |A - a| < \epsilon$.} 
+	\end{list}
+	
+	We say that the subsets (a) and (A) are disjoints, which is to say that the have no common element.
+	
+	\newpage
+	A cut is not necessarily a partition (I, 5, $\deg{4}$) of $\mathbb{Q}$, since all rational numbers are not necessarily a class. \\
+	$\ang{2}$ \textbf{Consequences of the definition} - 
+	\begin{list}{}{}
+		\item a) All elements $A_0$ of $(A)$ is greater than all elements of $(a)$, otherwise $A_0$ belongs to $(a)$ according to property $\alpha$, which would be a contradiction in their being disjoint. 
+		\time b) If $r \in \mathbb{Q}$ and is not in a class, it is greater than all elements in $(a)$ by $(\alpha)$ and lesser than all elements of $(A)$ by $(\beta)$
+		\item c) There can not be two rational numbers, $r$ and $r^\prime$, which are both not in a class. If we suppose that $r < r^\prime$ we have: 
+	\end{list}
+				$$\begin{rcases}
+					a < r < r^\prime < A\\  
+					A - a > r^\prime - r
+				\end{rcases}  \forall a \in (a) \text{    and    } \forall A \in (A) $$
+	which is a contradiction of property $(\gamma)$. \\
+	
+	
+	\noindent$\ang{3}$ \underline{Theorem.} - \textbf{If A partition of $\mathbb{Q}$ consists of two non-empty classes $(a)$ and $(A)$ containing elements $a$ and $A$, then the following properties hold : 
+	\begin{enumerate}[label=(\greek*),leftmargin=!,labelindent=5pt,itemindent=-1pt]
+		\item All rational numbers less than an element of $(a)$ belongs to $(a)$,
+		\item All rational numbers greater than an element of $(A)$n belongs to $(A)$ 
+	\end{enumerate}
+	This partition is a cut.}
+	
+	\par 
+	The word partition implies, we recall (I, 10, $\ang3$) that $(a)$ and $(A)$ are disjoint and that all rational numbers are in a class. It is sufficient to show that the property $(\gamma)$ is a consequence of this hypothesis. 
+	
+	 
+	
+	
+	 
+	
+\end{document}
